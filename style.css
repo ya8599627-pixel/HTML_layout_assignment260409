@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: rgb(48, 48, 48);
+    color:rgb(48, 48, 48);
+}
+
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* banner */
+
+.top-banner {
+  background: rgb(38, 38, 38);
+  color: #ffffff;
+}
+
+.top-banner-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 12px;
+}
+
+/* header */
+.site-header {
+  background: #efe9e7;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.header-inner {
+  display: grid;
+  grid-template-columns: 180px 1fr 150px;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.logo h1 {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.main-nav li {
+  font-size: 13px;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  font-size: 12px;
+}
+
+.hero-section {
+  background: #f3f1ec;
+}
+
+.hero-image img {
+  height: 700px;
+}
+
+.hero-text {
+  background: #f3f1ec;
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.hero-text h2 {
+  font-size: 34px;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
+.hero-text p {
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
+.hero-links {
+  display: flex;
+  gap: 28px;
+}
+
+.hero-links a {
+  font-size: 13px;
+}
+
+.top-banner-inner,
+.header-inner,
+.hero-text,
+.intro-inner,
+.content-inner,
+.footer-inner {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 1024px) {
+  .header-inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .main-nav ul {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .header-icons {
+    justify-content: flex-start;
+  }
+
+  .hero-image img {
+    height: 500px;
+  }
+
+  .content-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
